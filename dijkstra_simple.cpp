@@ -1,4 +1,4 @@
-nclude <iostream>
+include <iostream>
 #include <climits>
 using namespace std;
 
