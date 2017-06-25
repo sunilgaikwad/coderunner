@@ -165,6 +165,6 @@ int main()
      }
   }
   cout<<"Done finding shortest paths"<<endl;
-  cout<<c->value;
+  cout<<c->value<<endl;
   return 0;
 }
