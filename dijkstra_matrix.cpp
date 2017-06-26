@@ -41,6 +41,16 @@ int FindSmallest(int *spaths, bool *svisited)
   return smallestindex;
 }
 
+void printpaths(int *previous, int to)
+{
+  cout<<to<<" <- ";
+  while(*(previous + to) != -1)
+  {
+    cout<<*(previous + to)<<" <- ";
+    to = *(previous + to);
+  }
+}
+
 int main(int argc, char const *argv[]) {
   /* paths */
   /*   2 B  5   D  2   */
@@ -49,14 +59,15 @@ int main(int argc, char const *argv[]) {
 
   //Create a 2d map
   int paths[6][6]     = { {0, 2, 3, 0, 0, 0},
-                          {0, 0, 3, 5, 4, 0},
-                          {0, 0, 3, 2, 3, 0},
-                          {0, 0, 0, 0, 3, 2},
+                          {0, 0, 3, 5, 2, 0},
+                          {0, 0, 0, 3, 2, 0},
                           {0, 0, 0, 0, 0, 2},
+                          {0, 0, 0, 0, 3, 2},
                           {0, 0, 0, 0, 0, 0}};
 
   int spaths[6]       = {0, INT_MAX, INT_MAX, INT_MAX, INT_MAX, INT_MAX};
   bool svisited[6]    = {false, false, false, false, false, false};
+  int previous[6]     = {-1, -1, -1, -1, -1, -1};
 
   while (NotAllVisited(&svisited[0])) {
     //find the smallest
@@ -73,6 +84,7 @@ int main(int argc, char const *argv[]) {
         if((spaths[smallest] + paths[smallest][j]) < spaths[j])
         {
           spaths[j] = spaths[smallest] + paths[smallest][j];
+          previous[j] = smallest;
         }
       }
     }
@@ -80,5 +92,6 @@ int main(int argc, char const *argv[]) {
   }
 
   cout<<"smallest path is "<<spaths[5]<<endl;
+  printpaths(previous, 5);
   return 0;
 }
