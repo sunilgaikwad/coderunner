@@ -1,3 +1,5 @@
+//Implement dijkstra using structs and single dimention array
+
 #include <iostream>
 #include <climits>
 using namespace std;
