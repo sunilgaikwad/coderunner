@@ -12,3 +12,6 @@ Common Programs
   Given a matrix with bools, fill the ones that are false and return the number of blocks filled. Using recursion for first method.
   However all variables are stored on the stack and for a big matrix its highly likely that it will over flow.
   Next approach will be using iterative dfs.
+
+4) fillpattern_stack
+   Same as above but using stl stack instead of recursion
