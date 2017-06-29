@@ -30,7 +30,10 @@ int main(int args, const char *argv[])
         return 0;
       }
       else
+      {
+        color[x][y] = true;
         pts.push(make_pair(x, y));
+      }
     }
     else
     {
@@ -40,14 +43,13 @@ int main(int args, const char *argv[])
 
     int noofblocks = 0;
 
-    while(pts.empty() != true)
+    while(pts.empty() == false)
     {
       ptpair temp = pts.top();
       pts.pop();
 
         //set the point as visited
         noofblocks++;
-        color[temp.first][temp.second] = true;
 
         //push neighbours
         if((temp.first - 1 >= 0 && temp.first - 1 < M) && (temp.second >= 0 && temp.second < N))
@@ -55,6 +57,7 @@ int main(int args, const char *argv[])
           if(color[temp.first - 1][temp.second] == false)
           {
             pts.push(make_pair(temp.first - 1, temp.second));
+            color[temp.first - 1][temp.second] = true;
           }
         }
         if((temp.first + 1 >= 0 && temp.first + 1 < M) && (temp.second >= 0 && temp.second < N))
@@ -62,6 +65,7 @@ int main(int args, const char *argv[])
           if(color[temp.first + 1][temp.second] == false)
           {
             pts.push(make_pair(temp.first + 1, temp.second));
+            color[temp.first + 1][temp.second] = true;
           }
         }
         if((temp.first >= 0 && temp.first < M) && (temp.second - 1 >= 0 && temp.second - 1 < N))
@@ -69,6 +73,7 @@ int main(int args, const char *argv[])
           if(color[temp.first][temp.second - 1] == false)
           {
             pts.push(make_pair(temp.first, temp.second - 1));
+            color[temp.first][temp.second - 1] = true;
           }
         }
         if((temp.first >= 0 && temp.first < M) && (temp.second + 1 >= 0 && temp.second + 1 < N))
@@ -76,6 +81,7 @@ int main(int args, const char *argv[])
           if(color[temp.first][temp.second + 1] == false)
           {
             pts.push(make_pair(temp.first, temp.second + 1));
+            color[temp.first][temp.second + 1] = true;
           }
         }
     }
