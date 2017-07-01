@@ -15,3 +15,6 @@ Common Programs
 
 4) fillpattern_stack
    Same as above but using stl stack instead of recursion
+
+5) fillpattern_queue
+   Same as above but using queue i.e to use breadth first search
