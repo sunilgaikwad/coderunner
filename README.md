@@ -18,3 +18,6 @@ Common Programs
 
 5) fillpattern_queue
    Same as above but using queue i.e to use breadth first search
+
+6) rotateimage
+   rotate an image by 90 degrees. since worked on few matrices, just trying out this standard matrix rotation problem
