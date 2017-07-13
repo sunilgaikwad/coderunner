@@ -1,26 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
+template <typename T>
 class rArray
 {
 private:
   int a_size;
   int a_capacity;
-  int *arry;
+  T *arry;
 
 public:
-  rArray()
-  {
-    //set defaults
-    a_size = 20;
-    a_capacity = 40;
-    arry = new int[a_capacity];
-  }
-  rArray(int size)
-  {
-    construct(size);
-  }
-
   void construct(int size)
   {
     a_size = size;
@@ -38,25 +28,29 @@ public:
         a_capacity = a_capacity * 2;
       }
     }
-    arry = new int[a_capacity];
+    arry = new T[a_capacity];
   }
 
-  rArray(int size, int value)
+  rArray()
+  {
+    //set defaults
+    a_size = 20;
+    a_capacity = 40;
+    arry = new T[a_capacity];
+  }
+
+  rArray(int size)
+  {
+    construct(size);
+  }
+
+  rArray(int size, T value)
   {
     construct(size);
     for(int i = 0; i < size; i++)
     {
       *(arry + i) = value;
     }
-  }
-
-  void print()
-  {
-    cout<<"Arry size is " <<a_size<<endl;
-    cout<<"Arry capacity is " <<a_capacity<<endl;
-    cout<<"Array values are"<<endl;
-    for(int i = 0; i < a_size;i++)
-      cout<<*(arry + i)<<endl;
   }
 
   void resize()
@@ -67,7 +61,7 @@ public:
     {
       a_capacity = a_capacity * 2;
       //Create a new array
-      int *newarry = new int[a_capacity];
+      T *newarry = new T[a_capacity];
       for(int i = 0; i < a_size; i++)
       {
         *(newarry + i) = *(arry + i);
@@ -77,25 +71,34 @@ public:
     }
   }
 
-  void push_back(int value)
+  void push_back(T value)
   {
     resize();
     *(arry + a_size) = value;
     a_size = a_size + 1;
   }
 
-  int pop_back()
+  T pop_back()
   {
-    int retval = *(arry + a_size - 1);
+    T retval = *(arry + a_size - 1);
     a_size--;
     return retval;
+  }
+
+  void print()
+  {
+    cout<<"Arry size is " <<a_size<<endl;
+    cout<<"Arry capacity is " <<a_capacity<<endl;
+    cout<<"Array values are"<<endl;
+    for(int i = 0; i < a_size;i++)
+      cout<<*(arry + i)<<endl;
   }
 };
 
 int main()
 {
-  rArray x(30, 10);
-  x.push_back(11);
+  rArray<string> x(30, "abc");
+  x.push_back("bca");
   cout<<"popped "<< x.pop_back()<<endl;
   x.print();
   return 0;
