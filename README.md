@@ -8,6 +8,8 @@ Common Programs
 2) dijkstra_matrix
   Same as dijkstra_simple but used a matrix for storing the vertices data
 
+2a) to-do: dijkstra_priorityqueue  
+
 3) fillpattern
   Given a matrix with bools, fill the ones that are false and return the number of blocks filled. Using recursion for first method.
   However all variables are stored on the stack and for a big matrix its highly likely that it will over flow.
@@ -30,3 +32,9 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
 1) insertionsort.cpp
    A simple insertionsort on fixed integer array
+
+
+/data_structures - implementations of common data structures
+
+1) array/resizing_array.cpp
+   Implementing a resizable array aka vector 
