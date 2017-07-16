@@ -1,3 +1,5 @@
+//Big O of N square
+
 #include <iostream>
 using namespace std;
 
