@@ -25,16 +25,24 @@ Common Programs
    rotate an image by 90 degrees. since worked on few matrices, just trying out this standard matrix rotation problem
 
 
-
-
 /algorithms_analysis - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
 1) insertionsort.cpp
    A simple insertionsort on fixed integer array
 
+2) mergesort.cpp
+  Mergesort on fixed integer array. Runtime of nlog n with additional array og size n, where n is number of elements to sort  
+
 
 /data_structures - implementations of common data structures
 
 1) array/resizing_array.cpp
-   Implementing a resizable array aka vector 
+   Implementing a resizable array aka vector
+
+
+/programming_c++ - Online course through NPTEL
+https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
+
+1)pointerfun.c
+  simple program to understand pointers in c
