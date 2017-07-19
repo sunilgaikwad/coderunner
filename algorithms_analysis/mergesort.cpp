@@ -3,13 +3,14 @@
 #include <iostream>
 using namespace std;
 
-void merge(int *arry, int start, int end)
+template <typename T>
+void merge(T *arry, int start, int end)
 {
   if(start >= end)
     return;
 
   int size = end - start + 1;
-  int temp[size];
+  T temp[size];
 
   int mid = (end + start)/2;
   int start1 = start;
@@ -57,7 +58,8 @@ void merge(int *arry, int start, int end)
   }
 }
 
-void mergesort(int *arry, int start, int end)
+template <typename T>
+void mergesort(T *arry, int start, int end)
 {
   if(start < end)
   {
@@ -73,11 +75,11 @@ void mergesort(int *arry, int start, int end)
 
 int main()
 {
-  int arry[] = {7, 3, 2, 9, 5, 1, 4, 0, 77, 43, 97, 234, 12, 80, 47, 25, 997, 2416, 21, 73};
-  int size = sizeof(arry)/sizeof(int);
+  char arry[] = {'b', 'c', 'a', 'd'};
+  int size = sizeof(arry)/sizeof(char);
 
   //Mergesort
-  mergesort(&arry[0], 0, size - 1);
+  mergesort<char>(&arry[0], 0, size - 1);
 
   for(int i = 0; i < size; i++)
   {

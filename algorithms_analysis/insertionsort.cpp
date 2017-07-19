@@ -3,35 +3,41 @@
 #include <iostream>
 using namespace std;
 
-int main()
+template <typename T>
+void insertionsort(T *arry, int size)
 {
-  int arry[7] = {7, 6, 5, 4, 3, 2, 1};
-
+  int noofelements = size/sizeof(T);
   int i = 1;
   int j = i - 1;
 
-  for(int start = i; start < 7; start++)
+  for(int start = i; start < noofelements; start++)
   {
     j = start - 1;
-    if(arry[start] >= arry[j])
+    if(*(arry + start) >= *(arry + j))
       continue;
     else
     {
       int k = start;
       j = k - 1;
-      while(j >= 0 && arry[j] > arry[k])
+      while(j >= 0 && *(arry + j) > *(arry + k))
       {
-        int temp = arry[j];
-        arry[j] = arry[k];
-        arry[k] = temp;
+        T temp = *(arry + j);
+        *(arry + j) = *(arry + k);
+        *(arry + k) = temp;
         k = k - 1;
         j = k - 1;
       }
     }
   }
 
-  for(int i = 0; i < 7; i++)
-   cout<<arry[i]<<" ";
-  cout<<endl;
+  for(int i = 0; i < noofelements; i++)
+   cout<<*(arry + i)<<" ";
+
+}
+
+int main()
+{
+  int arry[7] = {7, 6, 5, 4, 3, 2, 1};
+  insertionsort<int>(&arry[0], sizeof(arry));
   return 0;
 }
