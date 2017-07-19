@@ -11,7 +11,10 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 array/resizing_array.cpp
 -   Implement erase, insert, begin functions. Hoping to do this using a self implemented iterator class
 
--   Implement c++ iterators
+linkedlist/fwd_list.cpp		linkedlist/fwd_list.h		linkedlist/fwd_list_main.cpp
+-   Implement all the functions
+
+Implement c++ iterators
 
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG

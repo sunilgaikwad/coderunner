@@ -38,6 +38,8 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 1) array/resizing_array.cpp
    Implementing a resizable array aka vector
 
+2) linkedlist/fwd_list.cpp		linkedlist/fwd_list.h		linkedlist/fwd_list_main.cpp
+   Just definition of few important functions. Will not implement all functions.
 
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
