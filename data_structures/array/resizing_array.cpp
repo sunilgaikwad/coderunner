@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <exception>
 using namespace std;
 
 template <typename T>
@@ -78,11 +79,65 @@ public:
     a_size = a_size + 1;
   }
 
-  T pop_back()
+  void pop_back()
   {
-    T retval = *(arry + a_size - 1);
-    a_size--;
-    return retval;
+    if(a_size > 0)
+    {
+      T retval = *(arry + a_size - 1);
+      a_size--;
+    }
+    else
+    {
+      std::cerr << "Array empty" << '\n';
+    }
+  }
+
+  T back()
+  {
+    if(a_size > 0)
+    {
+      T retval = *(arry + a_size - 1);
+      return retval;
+    }
+    else
+    {
+      std::cerr << "Array empty" << '\n';
+      return 0;
+    }
+  }
+
+  T const *begin()
+  {
+    return arry;
+  }
+
+  void insert(T const *it, T value)
+  {
+    resize();
+    for(int i = a_size - 1; i >= 0; i--)
+    {
+        *(arry + i + 1) = *(arry + i);
+    }
+    *arry = value;
+    a_size = a_size + 1;
+  }
+
+  int size()
+  {
+    return a_size;
+  }
+
+  int capacity()
+  {
+    return a_capacity;
+  }
+
+  bool isEmpty()
+  {
+    if(a_size == 0)
+     return true;
+    else
+     return false;
   }
 
   void print()
@@ -97,9 +152,15 @@ public:
 
 int main()
 {
-  rArray<string> x(30, "abc");
+  rArray<string> x(29, "abc");
   x.push_back("bca");
-  cout<<"popped "<< x.pop_back()<<endl;
+  x.insert(x.begin(), "xyz");
+  cout<<"Begin is at "<<*(x.begin())<<endl;
+  if(!x.isEmpty())
+  {
+    cout<<"Popped "<< x.back()<<endl;
+    x.pop_back();
+  }
   x.print();
   return 0;
 }
