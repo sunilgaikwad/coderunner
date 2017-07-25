@@ -1,4 +1,6 @@
 //Implementation of linked list (forward list)
+#include <iostream>
+using namespace std;
 namespace notastd
 {
   template <class Ta>
@@ -7,6 +9,8 @@ namespace notastd
   private:
     Ta data;
     Node *next;
+
+    Node(Ta value) : data(value), next(nullptr) {}
 
     template <class Tb>
     friend class forward_list;
