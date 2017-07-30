@@ -1,3 +1,5 @@
+
+To-Do count = 4 //RuleOfThumb - The todo count cannot go above 5
 # coderunner
 Common Programs
  dijkstra_priorityqueue. Will do once i learn more about priority queues
@@ -8,13 +10,12 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
 ##/data_structures - implementations of common data structures
 
-array/resizing_array.cpp
--   Implement erase, insert, begin functions. Hoping to do this using a self implemented iterator class
-
 linkedlist/fwd_list.cpp		linkedlist/fwd_list.h		linkedlist/fwd_list_main.cpp
 -   Implement all the functions
 
-Implement c++ iterators
+Implement iterators
+
+Implement auto_ptr (looks like this is depreciated in c++11) or unique_ptr
 
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG

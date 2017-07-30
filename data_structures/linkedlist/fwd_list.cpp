@@ -15,6 +15,13 @@ namespace notastd
   }
 
   template <class Tb>
+  forward_list<Tb>::~forward_list()
+  {
+    delete fstart;
+    cout<<"forward_list destructor called"<<endl;
+  }
+
+  template <class Tb>
   forward_list<Tb>::forward_list(int size, Tb value)
   {
     fstart = fend = nullptr;
@@ -94,6 +101,11 @@ namespace notastd
   {
     //push at the last
 
+  }
+  template <class Tb>
+  Node<Tb>* forward_list<Tb>::begin()
+  {
+    return fstart->next;
   }
 
   template <class Tb>
