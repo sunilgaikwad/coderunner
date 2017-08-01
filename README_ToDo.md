@@ -4,6 +4,8 @@ To-Do count = 4 //RuleOfThumb - The todo count cannot go above 5
 Common Programs
  dijkstra_priorityqueue. Will do once i learn more about priority queues
 
+ Evaluate prefix notation. Infix to prefix notation
+ 
 ##/algorithms_analysis - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
