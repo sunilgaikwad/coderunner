@@ -41,6 +41,12 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 2) linkedlist/fwd_list.cpp		linkedlist/fwd_list.h		linkedlist/fwd_list_main.cpp
    Just implementation of few important functions. Will not implement all functions.
 
+3) stack/evaluate_postfix_notation.cpp
+    Process a (reverse polish) postfix notation and find its value. This was achieved using a stack.  
+
+4) stack/infix_to_postfix_notation.cpp
+    Converting a infix notation to a post fix notation. This was achieved using a stack and a queue
+
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
