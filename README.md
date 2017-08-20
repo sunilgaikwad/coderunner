@@ -32,6 +32,8 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 2) mergesort.cpp
   Mergesort on fixed integer array. Runtime of nlog n with additional array og size n, where n is number of elements to sort  
 
+3) quicksort.cpp - Also code for randomised quicksort where we randomly select a pivot index
+  Performing quicksort using the first element of the array as pivot.   
 
 ##/data_structures - implementations of common data structures
 
@@ -42,10 +44,15 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
    Just implementation of few important functions. Will not implement all functions.
 
 3) stack/evaluate_postfix_notation.cpp
-    Process a (reverse polish) postfix notation and find its value. This was achieved using a stack.  
+   Process a (reverse polish) postfix notation and find its value. This was achieved using a stack.  
 
 4) stack/infix_to_postfix_notation.cpp
-    Converting a infix notation to a post fix notation. This was achieved using a stack and a queue
+   Converting a infix notation to a post fix notation. This was achieved using a stack and a queue
+
+5) queue/circular_queue.cpp       queue/circular_queue.h         queue/circular_queue_main.cpp
+   Implemented circular queue using a fixed array
+
+6) hashtable - in progress
 
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
