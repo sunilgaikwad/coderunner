@@ -7,7 +7,7 @@ using namespace std;
 template <typename T>
 int randomized_partition(vector<T> &vec, int start, int end)
 {
-  int rindex = rand() % end + start;
+  int rindex = rand() % (end - start) + start;
   T rtemp = vec[rindex];
   vec[rindex] = vec[start];
   vec[start] = rtemp;
@@ -75,9 +75,9 @@ void randomized_quicksort(vector<T> &vec, int start, int end)
 {
   int pivotindex = randomized_partition(vec, start, end);
   if(start < pivotindex - 1)
-   quicksort(vec, start, pivotindex - 1);
+   randomized_quicksort(vec, start, pivotindex - 1);
   if(pivotindex + 1 < end)
-    quicksort(vec, pivotindex + 1, end);
+    randomized_quicksort(vec, pivotindex + 1, end);
 }
 
 int main()
