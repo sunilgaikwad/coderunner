@@ -11,8 +11,6 @@ Common Programs
 ##/algorithms_analysis - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
-Heapsort
-
 ##/data_structures - implementations of common data structures
 
 linkedlist/fwd_list.cpp		linkedlist/fwd_list.h		linkedlist/fwd_list_main.cpp

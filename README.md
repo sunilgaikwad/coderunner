@@ -49,6 +49,9 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 4) stack/infix_to_postfix_notation.cpp
     Converting a infix notation to a post fix notation. This was achieved using a stack and a queue
 
+5) heap/heap.cpp
+   Implementation of heap using a vector. Implemented Enqueue/Dequeue for heapsort
+   
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
