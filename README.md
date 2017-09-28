@@ -22,6 +22,8 @@
 6) rotateimage
    rotate an image by 90 degrees. since worked on few matrices, just trying out this standard matrix rotation problem
 
+7) data_structures/hashtable/stringmatching_KarbRabin.cpp
+   Finding a string in a large string using Rabin-Karp algorithms
 
 ##/algorithms_analysis - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
@@ -51,7 +53,9 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
 5) heap/heap.cpp
    Implementation of heap using a vector. Implemented Enqueue/Dequeue for heapsort
-   
+
+6) hashtable/*.*
+    Hashtable implementation using array.     
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
