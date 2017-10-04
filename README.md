@@ -22,6 +22,8 @@
 6) rotateimage
    rotate an image by 90 degrees. since worked on few matrices, just trying out this standard matrix rotation problem
 
+7) data_structures/hashtable/stringmatching_KarbRabin.cpp
+   Finding a string in a large string using Rabin-Karp algorithms
 
 ##/algorithms_analysis - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
@@ -32,6 +34,8 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 2) mergesort.cpp
   Mergesort on fixed integer array. Runtime of nlog n with additional array og size n, where n is number of elements to sort  
 
+3) orderstatistics.cpp
+  Nth smallest element in a array of unsorted elements. Used divid and conquer technique  
 
 ##/data_structures - implementations of common data structures
 
@@ -41,6 +45,17 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 2) linkedlist/fwd_list.cpp		linkedlist/fwd_list.h		linkedlist/fwd_list_main.cpp
    Just implementation of few important functions. Will not implement all functions.
 
+3) stack/evaluate_postfix_notation.cpp
+    Process a (reverse polish) postfix notation and find its value. This was achieved using a stack.  
+
+4) stack/infix_to_postfix_notation.cpp
+    Converting a infix notation to a post fix notation. This was achieved using a stack and a queue
+
+5) heap/heap.cpp
+   Implementation of heap using a vector. Implemented Enqueue/Dequeue for heapsort
+
+6) hashtable/*.*
+    Hashtable implementation using array.     
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
