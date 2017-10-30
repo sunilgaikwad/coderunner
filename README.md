@@ -51,22 +51,27 @@ https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
     Hashtable implementation using array.     
 
 7) graph/
-  dijkstra_simple.cpp
-  This is simple dijkstra algorithm using structs/classes for data and finding the sortest path from one source vertex to all other vertices
-  Array was used for storing the vertices and hence the algorithm has a n2 run time in addition to ElogV for traversing each edge
-  In follow-up implementations, i will use a priority queue for increasing run time efficiency
+  a) dijkstra_simple.cpp
+    This is simple dijkstra algorithm using structs/classes for data and finding the shortest path from one source vertex to all other vertices
+    Array was used for storing the vertices and hence the algorithm has a n2 run time in addition to ElogV for traversing each edge
+    In follow-up implementations, i will use a priority queue for increasing run time efficiency
 
-  dijkstra_matrix.cpp
-  Same as dijkstra_simple but used a matrix for storing the vertices data
+  b) dijkstra_matrix.cpp
+    Same as dijkstra_simple but used a matrix for storing the vertices data
 
-  ShortestPaths_dp.cpp
-  Shortest path from a source vertex to a given vertex using dynamic programming
+  c) ShortestPaths_dp.cpp
+    Shortest path from a source vertex to a given vertex using dynamic programming
 
-   Topologicalsort.cpp
-   Sorting a DAG topologically  
+  d)Topologicalsort.cpp
+    Sorting a DAG topologically  
 
 ##/programming_c++ - Online course through NPTEL
 https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG
 
 1)pointerfun.c
   simple program to understand pointers in c
+
+##/searching_techniques
+1) binarysearch_sortedarray.cpp
+   Searching a sorted array using binary search. Both iterative and recursive approach
+   Added unit test using googletest.
