@@ -56,7 +56,7 @@ void print(vector<T> vec1, vector<T> vec2)
   cout<<endl;
   size = vec2.size();
   for(int i = 0; i < size; i++)
-    cout<<vec2[i]<<" ";ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    cout<<vec2[i]<<" ";
 }
 int main()
 {
