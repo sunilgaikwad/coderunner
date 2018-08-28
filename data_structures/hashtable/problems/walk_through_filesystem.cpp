@@ -121,8 +121,10 @@ vector<string> FindDuplicates(const string &dirpath)
       else if(S_ISREG(st.st_mode))
       {
         //is file st_atime
-        //cout<<"Analysing file "<<top_str<<endl;
-        size_t filehash = readfile(top_str, st.st_size);
+        //If we want to hash the contenst of the file
+        //size_t filehash = readfile(top_str, st.st_size);
+
+        size_t filehash = std::hash<string>()(st.st_size);
         if((it = hmap.find(filehash)) == hmap.end())
         {
           //Not in map. Add to map
